@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang- en>
+
+<head>
+	<script type="text/javascript">
+		function inputFocus(i){
+			if(i.value==i.defaultValue){ i.value=""; i.style.color="#0C7D8B"; }
+		}
+		function inputBlur(i){
+			if(i.value==""){ i.value=i.defaultValue; i.style.color="#cad3b8"; }
+		}
+	</script>
+
+
+<style type = "text/CSS">
+
+	#modal {
+		width:800px;
+		margin:auto;
+		margin-top:100px;
+		background-color: rgba(12, 125, 139, 0.75);
+		border-radius: 3px;
+		height: 700px;
+		padding: 20px;
+	}
+
+	.modal-backdrop {
+		background-color: rgba(255, 255, 255, 0.75);
+	}
+
+	/* This will make the background white out while the fields are being filled out in the modal. The last number makes it opaque increases in btwn 1-0 */
+   		
+   	.smallbutton {
+   		
+   	}	
+	
+
+	button {
+
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 26px;
+		font-weight:;
+		line-height: 100%;
+		color: #fff;
+		text-align: center;
+		background-color: #92C337;
+
+		text-decoration: none;
+		position: relative;
+		display: block;
+		width: 100px;
+		padding:5px;
+		margin: 0 auto;
+		border-radius: 5px;
+	}
+
+	input[type=text] {
+		border-radius: 3px;
+		background-color: #FFFFFF;
+		
+		color: #0C7D8B;
+		font-family: 'Fjalla One', sans-serif;
+		font-size: 14pt;
+		line-height: 100%;
+		width:200px;
+		padding:10px;
+
+		text-align: center;
+		position: left;
+		
+		margin: 0 auto;
+		/*Pull in CSS for designed text box*/ 
+	}
+
+	label {
+		font-family: 'Fjalla One', sans-serif;
+		color: #0C7D8B;
+		font-weight: bold;
+		font-size:13pt;
+
+
+		position: relative;
+		text-align: center;
+		margin: 0 auto;
+		display: block;
+	}
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="modal col-md-6">
+
+		<br>
+		<br>
+		<br>
+		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
+		value="Organization Name" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+		<br>
+		<br>
+		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
+		value="Address 1" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+		<br>
+		<br>
+		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
+		value="Address 2" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+		<br>
+		<br>
+		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
+		value="City" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+
+		<input type="text" style="color:#cad3b8;" 
+		value="State" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+
+		<input type="text" style="color:#cad3b8;" 
+		value="Zip" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+		<br>
+		<br>
+		<button class="button" onclick="Login to Dashboard">Submit</button>		
+		<br>
+	</div>
+
+	
+		
+	
+	
+</body>

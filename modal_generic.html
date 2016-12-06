@@ -29,10 +29,11 @@
 	}
 
 	/* This will make the background white out while the fields are being filled out in the modal. The last number makes it opaque increases in btwn 1-0 */
-   		
-   	.smallbutton {
-   		
-   	}	
+   	
+   	.smalltextbox {
+		
+	}	
+
 	
 
 	button {
@@ -62,7 +63,6 @@
 		font-family: 'Fjalla One', sans-serif;
 		font-size: 14pt;
 		line-height: 100%;
-		width:200px;
 		padding:10px;
 
 		text-align: center;
@@ -85,6 +85,8 @@
 		display: block;
 	}
 
+	
+
 </style>
 
 </head>
@@ -96,34 +98,41 @@
 		<br>
 		<br>
 		<br>
+
 		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
 		value="Organization Name" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+
 		<br>
 		<br>
+
 		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
 		value="Address 1" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+
 		<br>
 		<br>
+
 		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
 		value="Address 2" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+
 		<br>
 		<br>
-		<input type="text" name="firstname" title="First Name" style="color:#cad3b8;" 
+
+		<input type="text" style="color:#cad3b8;" 
 		value="City" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
 
-		<input type="text" style="color:#cad3b8;" 
+		<input type="text" max="2" style="color:#cad3b8; width:50px;" 
 		value="State" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
 
-		<input type="text" style="color:#cad3b8;" 
+		<input type="text" max="9" min="5" style="color:#cad3b8; width:85px;" 
 		value="Zip" onfocus="inputFocus(this)" onblur="inputBlur(this)"></input>
+
 		<br>
 		<br>
-		<button class="button" onclick="Login to Dashboard">Submit</button>		
+
+		<button class="button" onclick="Enter">Save</button>	
+		<button class="button" style="color:#0C7D8B" onclick="Close">X</button>	
+
 		<br>
 	</div>
-
-	
-		
-	
 	
 </body>
